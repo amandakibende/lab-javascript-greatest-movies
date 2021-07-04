@@ -6,7 +6,7 @@ const movies = require("./data");
 
 
  function getAllDirectors(item) { 
-  return item.map(getMoviesDirector => {getMoviesDirector.director})
+  return item.map(getMoviesDirector => {getMoviesDirector.director ? "true" : "false"})
 }
 
 console.log(getAllDirectors);
@@ -14,8 +14,7 @@ console.log(getAllDirectors);
 
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct?
 function howManyMovies(film) 
-return film.filter ()
-{
+return film.filter (movies => {
   if ( movies.director !== `Spielberg`)
   return 0;
   if (movies.genre === `drama`)
@@ -23,10 +22,13 @@ return film.filter ()
   
 }
 
+)
+
+
 console.log(howManyMovies)
 
-//
 
+// Iteration 3: All scores average - Get the average of all scores with 2 decimals
 
 function scoresAverage() {}
 
