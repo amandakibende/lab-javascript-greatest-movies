@@ -13,6 +13,13 @@ console.log(getAllDirectors);
 
 
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct?
+
+// I decided to devide in two parts.
+
+//First I filter all `SPIELBERG` .
+// Then for every `drama` movie I return 1.
+// Issue : I didnt know how to add my drama return and then add 1 in order to calculate the total of drama movie. I dont know if II can add another function inside the function.
+
 function howManyMovies(film) 
 return film.filter (movies => { if ( movies.director !== `Spielberg`)
 return 0;
@@ -35,10 +42,17 @@ function scoresAverage(getAverage){return getAverage.reduce((acc, score)=> acc +
 console.log(Math.round(scoresAverage));
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
-function dramaMoviesScore(dramaAvg) {return dramaAvg.}
+function dramaMoviesScore(dramaAvg)  
+
+console.log(Math.round(dramaMoviesScore));
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
-function orderByYear() {}
+function orderByYear(a, b)
+
+//I have a synthaxe problem I dont understand how to write with function.
+//Here I would like to use the sort method in order to complete.
+// So I would have to compare. 
+// function.sort (a, b  => a.year - b.year)
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically() {}
